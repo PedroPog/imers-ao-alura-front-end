@@ -5,9 +5,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Spotify Imersão</title>
-        <link rel="stylesheet" href="assets/reset.css">
-        <link rel="stylesheet" href="assets/styles.css">
-        <link rel="shortcut icon" href="assets/icons/favicon.png"
+        <link rel="stylesheet" href="src/styles/vars.css">
+        <link rel="stylesheet" href="src/styles/reset.css">
+        <link rel="stylesheet" href="src/styles/styles.css">
+        <link rel="stylesheet" href="src/styles/main-content.css">
+        <link rel="shortcut icon" href="src/assets/icons/favicon.png"
             type="image/x-icon">
         <link rel="stylesheet"
             href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css" />
@@ -20,7 +22,7 @@
             <nav class="sidebar__navigation">
                 <div class="logo">
                     <a href="?">
-                        <img src="./assets/icons/logo-spotify.png" alt>
+                        <img src="./src/assets/icons/logo-spotify.png" alt>
                     </a>
                 </div>
                 <ul>
@@ -48,8 +50,10 @@
                 </div>
                 <section class="section-playlist">
                     <div class="section-playlist__content">
-                        <span class="text title">Crie sua primeira playlist</span>
-                        <span class="text subtitle">É facil, vamos te ajudar.</span>
+                        <span class="text title">Crie sua primeira
+                            playlist</span>
+                        <span class="text subtitle">É facil, vamos te
+                            ajudar.</span>
                         <button class="section-playlist__button">
                             <span>Criar playlist</span>
                         </button>
@@ -57,7 +61,7 @@
                     <section class="section-playlist"></section>
                 </section>
                 <div class="cookies">
-                    <a href="">Cookies</a>
+                    <a href>Cookies</a>
                 </div>
                 <div class="languages">
                     <button class="language__button">
@@ -67,11 +71,51 @@
                 </div>
             </div>
         </div>
+
+        <main>
+            <div class="main-container">
+                <nav class="header__navigation">
+                    <div class="navigation">
+                        <button class="arrow-left">
+                            <img src="src/assets/icons/small-left.png"
+                                alt="Seta a esquerda">
+                        </button>
+                        <button class="arrow-right">
+                            <img src="src/assets/icons/small-right.png"
+                                alt="Seta a direta">
+                        </button>
+                    </div>
+                    <div class="header__search">
+                        <img src="src/assets/icons/search.png" alt>
+                        <input id="search-input" type="text" maxlength="800"
+                            placeholder="O que voce quer ouvir?">
+                    </div>
+                    <div class="header__login">
+                        <button class="subscribe">Inscreva-se</button>
+                        <button class="login">Entrar</button>
+                    </div>
+
+                </nav>
+
+                <div class="playlist-container">
+                    <div id="result-playlists">
+                        <div class="playlist">
+                          <!-- COLOCAR O BOM DIA | BOA TARDE | BOA NOITE -->
+                          <h1 id="greeting"></h1>
+                          <h2 class="session">Navegar por todas as seções</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
         <footer class="disclaimer-premium">
             <div class="text">
-                <p class="disclaimer-premium__title">Testar o Premium de graça</p>
+                <p class="disclaimer-premium__title">Testar o Premium de
+                    graça</p>
                 <p class="disclaimer-premium__subtitle">
-                    Inscreva-se para curtir música ilimitada e podcasts só com alguns
+                    Inscreva-se para curtir música ilimitada e podcasts só com
+                    alguns
                     anúncios. Não precisa de cartão de crédito.
                 </p>
             </div>
